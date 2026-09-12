@@ -11,22 +11,50 @@ export default defineVersionedConfig({
     // VersionSwitcher component below instead, which ships with one
     versionSwitcher: false
   },
-  themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      //{ text: 'Examples', link: '/markdown-examples' }
-      { component: 'VersionSwitcher' }
-    ],
-
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+  locales: {
+    root: {
+      lang: 'en',
+      label: 'English',
+      themeConfig: {
+        nav: [
+          { text: 'Home', link: '/' },
+          { text: 'Roadmap', link: '/roadmap' }
+        ],
+        sidebar: [
+          {
+            text: 'Examples',
+            items: [
+              { text: 'Markdown Examples', link: '/markdown-examples' },
+              { text: 'Runtime API Examples', link: '/api-examples' }
+            ]
+          }
         ]
       }
+    },
+    ru: {
+      lang: 'ru',
+      label: 'Русский',
+      themeConfig: {
+        nav: [
+          { text: 'Главная', link: '/' },
+          { text: 'Дорожная карта', link: '/roadmap' }
+        ],
+        sidebar: [
+          {
+            text: 'Примеры',
+            items: [
+              { text: 'Примеры Markdown', link: '/markdown-examples' },
+              { text: 'Примеры Runtime API', link: '/api-examples' }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  themeConfig: {
+    // shared across every locale, appended after each locale's own nav
+    nav: [
+      { component: 'VersionSwitcher' }
     ],
 
     socialLinks: [

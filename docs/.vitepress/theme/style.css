@@ -129,3 +129,21 @@
   --vp-custom-block-tip-code-bg: var(--vp-c-brand-soft);
 }
 
+/**
+ * Component: Doc (sidebar-less pages)
+ *
+ * Pages without a sidebar (e.g. Roadmap) default to a narrow ~49rem prose
+ * width, wasting most of the available space. Let them use the same
+ * --vp-layout-max-width the home page and nav already use.
+ * -------------------------------------------------------------------------- */
+
+@media (min-width: 60rem) {
+  .VPDoc:not(.has-sidebar) .container {
+    max-width: var(--vp-layout-max-width) !important;
+  }
+
+  .VPDoc:not(.has-sidebar) .content {
+    max-width: var(--vp-layout-max-width) !important;
+  }
+}
+
