@@ -109,6 +109,16 @@ export default defineVersionedConfig({
           { text: 'ロードマップ', link: '/roadmap' }
         ]
       }
+    },
+    ko: {
+      lang: 'ko',
+      label: '한국어',
+      themeConfig: {
+        nav: [
+          { text: '홈', link: '/' },
+          { text: '로드맵', link: '/roadmap' }
+        ]
+      }
     }
   },
   themeConfig: {
