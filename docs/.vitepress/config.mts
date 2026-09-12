@@ -49,6 +49,16 @@ export default defineVersionedConfig({
           }
         ]
       }
+    },
+    zh: {
+      lang: 'zh',
+      label: '中文',
+      themeConfig: {
+        nav: [
+          { text: '首页', link: '/' },
+          { text: '路线图', link: '/roadmap' }
+        ]
+      }
     }
   },
   themeConfig: {
