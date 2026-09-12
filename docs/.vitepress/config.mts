@@ -59,6 +59,16 @@ export default defineVersionedConfig({
           { text: '路线图', link: '/roadmap' }
         ]
       }
+    },
+    de: {
+      lang: 'de',
+      label: 'Deutsch',
+      themeConfig: {
+        nav: [
+          { text: 'Startseite', link: '/' },
+          { text: 'Roadmap', link: '/roadmap' }
+        ]
+      }
     }
   },
   themeConfig: {
