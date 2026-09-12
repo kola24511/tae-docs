@@ -99,6 +99,16 @@ export default defineVersionedConfig({
           { text: 'Roadmap', link: '/roadmap' }
         ]
       }
+    },
+    ja: {
+      lang: 'ja',
+      label: '日本語',
+      themeConfig: {
+        nav: [
+          { text: 'ホーム', link: '/' },
+          { text: 'ロードマップ', link: '/roadmap' }
+        ]
+      }
     }
   },
   themeConfig: {
