@@ -119,6 +119,16 @@ export default defineVersionedConfig({
           { text: '로드맵', link: '/roadmap' }
         ]
       }
+    },
+    th: {
+      lang: 'th',
+      label: 'ไทย',
+      themeConfig: {
+        nav: [
+          { text: 'หน้าแรก', link: '/' },
+          { text: 'แผนงาน', link: '/roadmap' }
+        ]
+      }
     }
   },
   themeConfig: {
