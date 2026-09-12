@@ -69,6 +69,16 @@ export default defineVersionedConfig({
           { text: 'Roadmap', link: '/roadmap' }
         ]
       }
+    },
+    fr: {
+      lang: 'fr',
+      label: 'Français',
+      themeConfig: {
+        nav: [
+          { text: 'Accueil', link: '/' },
+          { text: 'Feuille de route', link: '/roadmap' }
+        ]
+      }
     }
   },
   themeConfig: {
