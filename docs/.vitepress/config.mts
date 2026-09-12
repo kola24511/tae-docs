@@ -89,6 +89,16 @@ export default defineVersionedConfig({
           { text: 'Hoja de ruta', link: '/roadmap' }
         ]
       }
+    },
+    it: {
+      lang: 'it',
+      label: 'Italiano',
+      themeConfig: {
+        nav: [
+          { text: 'Home', link: '/' },
+          { text: 'Roadmap', link: '/roadmap' }
+        ]
+      }
     }
   },
   themeConfig: {
