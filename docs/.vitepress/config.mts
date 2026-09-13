@@ -138,7 +138,8 @@ export default defineVersionedConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/kola24511/tae-docs' }
+      { icon: 'github', link: 'https://github.com/kola24511/tae-docs' },
+      { icon: 'discord', link: 'https://discord.gg/vPNGMTy7dg' }
     ]
   }
 })
