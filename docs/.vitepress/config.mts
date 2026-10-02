@@ -51,7 +51,8 @@ export default defineVersionedConfig({
                   items: [
                     { text: 'Введение', link: '/modding/getting-started/introduction' },
                     { text: 'Установка модов', link: '/modding/getting-started/installing-mods' },
-                    { text: 'Возможности и ограничения', link: '/modding/getting-started/capabilities-and-limitations' }
+                    { text: 'Возможности и ограничения', link: '/modding/getting-started/capabilities-and-limitations' },
+                    { text: 'Общие основы', link: '/modding/getting-started/common-basics' }
                   ]
                 },
                 {
@@ -66,19 +67,7 @@ export default defineVersionedConfig({
                   text: 'Дата-моды',
                   collapsed: false,
                   items: [
-                    { text: 'Создание первого дата-мода', link: '/modding/data-mods/first-data-mod' },
-                    { text: 'Предметы и выпадение', link: '/modding/data-mods/items-and-drops' }
-                  ]
-                },
-                {
-                  text: 'Общие основы',
-                  collapsed: false,
-                  items: [
-                    { text: 'Манифест — module.json', link: '/modding/fundamentals/manifest' },
-                    { text: 'Идентификаторы и зависимости', link: '/modding/fundamentals/identifiers-and-dependencies' },
-                    { text: 'Ресурсы и изображения', link: '/modding/fundamentals/assets-and-images' },
-                    { text: 'Локализация', link: '/modding/fundamentals/localization' },
-                    { text: 'Диагностика и частые ошибки', link: '/modding/fundamentals/troubleshooting' }
+                    { text: 'Создание первого дата-мода', link: '/modding/data-mods/first-data-mod' }
                   ]
                 },
                 {

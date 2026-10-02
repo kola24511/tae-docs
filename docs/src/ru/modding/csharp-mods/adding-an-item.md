@@ -64,39 +64,20 @@ namespace ExampleMod.Resources
 
 ## Идентификатор
 
-В классе указывается только локальный ID:
+В классе указан локальный ID `test_crystal`.
+С ID мода `example.mod` получается полный идентификатор
+`example.mod:test_crystal`.
 
-```csharp
-public override string Id => "test_crystal";
-```
-
-Игра добавляет к нему ID мода из `module.json`.
-Для ExampleMod полный идентификатор получится таким:
-
-```text
-example.mod:test_crystal
-```
-
-Предметы с одинаковым локальным ID в разных модах
-получают разные полные идентификаторы.
-
-::: warning Сохранения
-Не меняйте ID уже опубликованного предмета без необходимости.
-Сохранения используют идентификатор для поиска контента.
-Название и переводы можно менять отдельно.
-:::
+Правила ID и их связь с сохранениями описаны в
+[общих основах](../getting-started/common-basics#id-мода-и-предметов).
 
 ## Изображение
 
-Поместите PNG-файл в проект:
+Укажите путь к PNG-файлу в `Icon`:
+`assets/icons/crystal.png`.
+Скрипт сборки ExampleMod включает содержимое `assets/` в готовый пакет.
 
-```text
-assets/icons/crystal.png
-```
-
-Укажите этот же относительный путь в `Icon`.
-Скрипт сборки ExampleMod включит содержимое `assets/`
-в готовый пакет.
+Правила путей и изображений — в [общих основах](../getting-started/common-basics#ресурсы-и-изображения).
 
 ## Регистрация
 
@@ -145,37 +126,14 @@ using ExampleMod.Resources;
 
 ## Переводы
 
-Игра ищет названия и описания по локальному ID предмета:
+Для кристалла используются ключи `item.test_crystal.name`
+и `item.test_crystal.description`.
+Они уже находятся в `assets/lang/ru/items.json`
+и `assets/lang/en/items.json`.
 
-```text
-item.test_crystal.name
-item.test_crystal.description
-```
-
-В `assets/lang/ru/items.json`:
-
-```json
-{
-  "item.test_crystal.name": "Тестовый кристалл",
-  "item.test_crystal.description": "Ресурс, который выпадает с тестового моба."
-}
-```
-
-В `assets/lang/en/items.json`:
-
-```json
-{
-  "item.test_crystal.name": "Test crystal",
-  "item.test_crystal.description": "A resource dropped by the test mob."
-}
-```
-
-Если в файле уже есть переводы других предметов,
-добавьте новые ключи в существующий JSON-объект.
-
-Переводы имеют приоритет над `Name` и `Description`
-из класса. Если меняете текст в коде, обновите
-соответствующие переводы.
+При изменении `Name` и `Description` обновите и переводы.
+Формат языковых файлов и порядок поиска текста описаны в
+[общих основах](../getting-started/common-basics#локализация).
 
 ## Проверка в игре
 
