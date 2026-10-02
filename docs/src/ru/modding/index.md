@@ -25,7 +25,6 @@ next: false
 
 - [Создание первого мода](./csharp-mods/first-mod)
 - [Добавление предмета](./csharp-mods/adding-an-item)
-- [Сборка и публикация](./csharp-mods/building-and-publishing)
 
 ## Дата-моды
 
