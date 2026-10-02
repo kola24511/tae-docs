@@ -60,7 +60,6 @@ export default defineVersionedConfig({
                   items: [
                     { text: 'Создание первого мода', link: '/modding/csharp-mods/first-mod' },
                     { text: 'Добавление предмета', link: '/modding/csharp-mods/adding-an-item' },
-                    { text: 'Сборка и публикация', link: '/modding/csharp-mods/building-and-publishing' }
                   ]
                 },
                 {
