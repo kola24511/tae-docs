@@ -37,17 +37,63 @@ export default defineVersionedConfig({
       themeConfig: {
         nav: [
           { text: 'Главная', link: '/' },
+          { text: 'Документация', link: '/modding/' },
           { text: 'Дорожная карта', link: '/roadmap' }
         ],
-        sidebar: [
-          {
-            text: 'Примеры',
-            items: [
-              { text: 'Примеры Markdown', link: '/markdown-examples' },
-              { text: 'Примеры Runtime API', link: '/api-examples' }
-            ]
-          }
-        ]
+        sidebar: {
+          '/modding/': [
+            {
+              text: 'Моддинг',
+              items: [
+                {
+                  text: 'Начало',
+                  collapsed: false,
+                  items: [
+                    { text: 'Введение', link: '/modding/getting-started/introduction' },
+                    { text: 'Установка модов', link: '/modding/getting-started/installing-mods' },
+                    { text: 'Возможности и ограничения', link: '/modding/getting-started/capabilities-and-limitations' }
+                  ]
+                },
+                {
+                  text: 'C#-моды',
+                  collapsed: false,
+                  items: [
+                    { text: 'Создание первого мода', link: '/modding/csharp-mods/first-mod' },
+                    { text: 'Добавление предмета', link: '/modding/csharp-mods/adding-an-item' },
+                    { text: 'Сборка и публикация', link: '/modding/csharp-mods/building-and-publishing' }
+                  ]
+                },
+                {
+                  text: 'Дата-моды',
+                  collapsed: false,
+                  items: [
+                    { text: 'Создание первого дата-мода', link: '/modding/data-mods/first-data-mod' },
+                    { text: 'Предметы и выпадение', link: '/modding/data-mods/items-and-drops' }
+                  ]
+                },
+                {
+                  text: 'Общие основы',
+                  collapsed: false,
+                  items: [
+                    { text: 'Манифест — module.json', link: '/modding/fundamentals/manifest' },
+                    { text: 'Идентификаторы и зависимости', link: '/modding/fundamentals/identifiers-and-dependencies' },
+                    { text: 'Ресурсы и изображения', link: '/modding/fundamentals/assets-and-images' },
+                    { text: 'Локализация', link: '/modding/fundamentals/localization' },
+                    { text: 'Диагностика и частые ошибки', link: '/modding/fundamentals/troubleshooting' }
+                  ]
+                },
+                {
+                  text: 'Справочник',
+                  collapsed: false,
+                  items: [
+                    { text: 'C# API', link: '/modding/reference/csharp-api' },
+                    { text: 'Форматы JSON', link: '/modding/reference/json-formats' }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
       }
     },
     zh: {
