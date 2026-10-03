@@ -138,12 +138,16 @@
  * -------------------------------------------------------------------------- */
 
 @media (min-width: 60rem) {
-  .VPDoc:not(.has-sidebar) .container {
+  body:not(.VPNolebaseEnhancedReadabilitiesLayoutSwitchFullWidth):not(.VPNolebaseEnhancedReadabilitiesLayoutSwitchBothWidthAdjustable) .VPDoc:not(.has-sidebar) .container {
     max-width: var(--vp-layout-max-width) !important;
   }
 
-  .VPDoc:not(.has-sidebar) .content {
+  body:not(.VPNolebaseEnhancedReadabilitiesLayoutSwitchFullWidth):not(.VPNolebaseEnhancedReadabilitiesLayoutSwitchBothWidthAdjustable) .VPDoc:not(.has-sidebar) .content {
     max-width: var(--vp-layout-max-width) !important;
   }
+}
+
+.VPSocialLinks.VPNavBarSocialLinks.social-links {
+  margin-right: 0;
 }
 

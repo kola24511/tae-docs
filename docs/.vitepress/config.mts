@@ -5,6 +5,21 @@ export default defineVersionedConfig({
   title: "TAE Docs",
   description: "A VitePress Site",
   base: '/tae-docs/',
+  vite: {
+    optimizeDeps: {
+      exclude: [
+        '@nolebase/vitepress-plugin-enhanced-readabilities/client',
+        'vitepress',
+        '@nolebase/ui'
+      ]
+    },
+    ssr: {
+      noExternal: [
+        '@nolebase/vitepress-plugin-enhanced-readabilities',
+        '@nolebase/ui'
+      ]
+    }
+  },
   versionsConfig: {
     current: '0.1',
     // the plain built-in dropdown has no icon option; we use the
